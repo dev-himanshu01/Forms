@@ -6,8 +6,75 @@
     <title>Forms Development</title>
 </head>
 <body>
-    <form action="/" method="post">
-         <div>
+    <form action="/" method="GET">
+
+        <table>
+
+            <tbody>
+
+                <tr>
+                    <td> <label for="name">Name</label></td>
+                    <td> <input type="text" name="name" id="name" required></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email</label></td>
+                    <td><input type="email" name="email" id="email" required></td>
+                </tr>
+                <tr>
+                    <td><label for="phone">Phone</label></td>
+                    <td><input type="tel" name="phone" id="phone" minlength="10" maxlength="10"></td>
+                </tr>
+                
+                <!-- This is to use radio buttons -->
+                <tr>
+                    <td><label>Gender</label></td>
+                    <td>
+                        <input type="radio" name="gender" id="male">Male
+                        <input type="radio" name="gender" id="female">Female
+                    </td>
+                </tr>
+
+                <!-- This is for select drop down option -->
+                
+                <tr>
+                    <td><label for="profession">Profession</label></td>
+                    <td>
+                        <select name="profession" id="profession">
+                            <option value="govt">Govt. Official</option>
+                            <option value="private">Private Employee</option>
+                            <option value="self">Self Employeed</option>
+                            <option value="student">Student</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </td>
+                </tr>
+                
+                <!-- This is for text box -->
+                <tr style="vertical-align: top;">
+                    <td><label for="message">Message</label></td>
+                    <td>
+                        <textarea name="message" id="message" cols="40" rows="6"></textarea>
+                    </td>
+                </tr>
+
+                <!-- This for terms and conditions -->
+                <tr>
+                    <td colspan="2" >
+                        <input type="checkbox" name="tnc" id="tnc">
+                        <label for="tnc">I accept the terms and conditions</label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><button type="reset">Reset</button></td>
+                    <td style="text-align: right;"><button type="submit">Submit</button></td>
+                </tr>
+
+
+            </tbody>
+        </table>
+    </form>
+         <!-- <div>
             <label for="first_name">First Name</label>
             <input type="text" name="name" id="first_name">
          </div>
@@ -42,11 +109,11 @@
             <input type="checkbox" id="paneer">
             <input type="checkbox" id="chicken">
          </div>
-
+        -->
 
          <!-- Here we will see the select options -->
-         <h1>Tell us somthing about yourself</h1>
-    <form action="/" method="POST">
+         <!-- <h1>Tell us somthing about yourself</h1>
+        <form action="/" method="POST">
         <div>
             <label for="name">My name is</label>
             <input type="text" name="name" id="name" />
@@ -75,13 +142,9 @@
                 minlength="10"
                 maxlength="100"
                 >
-Rajesh Ramayan Koothrappali, Ph. D. is a fictional character on the CBS television series The Big Bang Theory, portrayed by British Indian actor Kunal Nayyar. Raj is based on a computer programmer that the show's co-creator, Bill Prady, knew back when he himself was a programmer.    
+            Rajesh Ramayan Koothrappali, Ph. D. is a fictional character on the CBS television series The Big Bang Theory, portrayed by British Indian actor Kunal Nayyar. Raj is based on a computer programmer that the show's co-creator, Bill Prady, knew back when he himself was a programmer.    
             </textarea>
-        </div>
-
-    </form>
-
-
-    </form>
+        </div>  
+        </form> -->
 </body>
 </html>
